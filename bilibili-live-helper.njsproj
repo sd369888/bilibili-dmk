@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1397f1a7-4005-4012-96c2-7180f41ff2d1}</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <ProjectView>ShowAllFiles</ProjectView>
+    <StartupFile>config.js</StartupFile>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <ProjectTypeGuids>{3AF33F2E-1136-4D97-BBB7-1795711AC8B8};{349c5851-65df-11da-9384-00065b846f21};{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}</ProjectTypeGuids>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">14.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    <LastActiveSolutionConfig>Debug|Any CPU</LastActiveSolutionConfig>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
+  <ItemGroup>
+    <Content Include="package-lock.json" />
+    <Content Include="package.json" />
+    <Content Include="README.md" />
+    <Content Include="config.js" />
+    <Content Include="webpack.main.config.js" />
+    <Content Include="webpack.renderer.config.js" />
+    <Content Include="app\package-lock.json" />
+    <Content Include="app\package.json" />
+    <Content Include="tasks\release.js" />
+    <Content Include="tasks\runner.js" />
+    <Content Include="app\dist\app.html" />
+    <Content Include="app\dist\danmaku.html" />
+    <Content Include="app\dist\app.js" />
+    <Content Include="app\dist\danmaku.js" />
+    <Content Include="app\icons\icon.ico" />
+    <Content Include="app\dist\imgs\alipay_logo.png" />
+    <Content Include="app\dist\imgs\alipay_qrcode.png" />
+    <Content Include="app\dist\imgs\wechat_logo.png" />
+    <Content Include="app\dist\imgs\wechat_qrcode.png" />
+    <Content Include="app\dist\imgs\config.svg" />
+    <Content Include="app\dist\imgs\danmaku.svg" />
+    <Content Include="app\dist\imgs\drag.svg" />
+    <Content Include="app\dist\imgs\enter.svg" />
+    <Content Include="app\dist\imgs\history.svg" />
+    <Content Include="app\dist\imgs\ionicons.svg" />
+    <Content Include="app\dist\imgs\music.svg" />
+    <Content Include="app\dist\imgs\quit.svg" />
+    <Content Include="app\src\main\index.dev.js" />
+    <Content Include="app\src\main\index.js" />
+    <Content Include="app\src\renderer\app\index.ejs" />
+    <Content Include="app\src\renderer\app\entry.js" />
+    <Content Include="app\src\renderer\app\router.js" />
+    <Content Include="app\src\renderer\danmaku\index.ejs" />
+    <Content Include="app\src\renderer\danmaku\entry.js" />
+    <Content Include="app\src\renderer\toolbar\index.ejs" />
+    <Content Include="app\src\renderer\toolbar\entry.js" />
+    <Content Include="app\src\renderer\utils\LRCParser.js" />
+    <Content Include="app\src\renderer\utils\MusicService.js" />
+    <Content Include="app\src\renderer\utils\Statistic.js" />
+    <Content Include="app\src\renderer\utils\ThemeService.js" />
+    <Content Include="app\src\renderer\utils\UserDataStore.js" />
+    <Content Include="app\src\renderer\app\mixins\giftImage.js" />
+    <Content Include="app\src\renderer\app\store\index.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="app" />
+    <Folder Include="app\dist" />
+    <Folder Include="app\dist\fonts" />
+    <Folder Include="app\dist\imgs" />
+    <Folder Include="app\icons" />
+    <Folder Include="app\src" />
+    <Folder Include="app\src\main" />
+    <Folder Include="app\src\renderer" />
+    <Folder Include="app\src\renderer\app" />
+    <Folder Include="app\src\renderer\app\mixins" />
+    <Folder Include="app\src\renderer\app\pages" />
+    <Folder Include="app\src\renderer\app\pages\config" />
+    <Folder Include="app\src\renderer\app\pages\help" />
+    <Folder Include="app\src\renderer\app\pages\history" />
+    <Folder Include="app\src\renderer\app\pages\lottery" />
+    <Folder Include="app\src\renderer\app\pages\music" />
+    <Folder Include="app\src\renderer\app\pages\statistic" />
+    <Folder Include="app\src\renderer\app\store" />
+    <Folder Include="app\src\renderer\app\theme" />
+    <Folder Include="app\src\renderer\danmaku" />
+    <Folder Include="app\src\renderer\toolbar" />
+    <Folder Include="app\src\renderer\utils" />
+    <Folder Include="bilibili-live-helper" />
+    <Folder Include="tasks" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <!--Do not delete the following Import Project.  While this appears to do nothing it is a marker for setting TypeScript properties before our import that depends on them.-->
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="False" />
+  <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsTools.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:48022/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost:1337</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
